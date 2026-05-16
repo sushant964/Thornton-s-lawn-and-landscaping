@@ -68,11 +68,11 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-brand-500 hover:bg-brand-400 text-white text-base font-semibold px-8 h-14 rounded-full shadow-[0_0_20px_rgba(82,183,136,0.3)] border-0">
-                <Link to="/contact">Get a Quote <ArrowRight className="ml-2 w-5 h-5" /></Link>
+              <Button nativeButton={false} render={<Link to="/contact" />} size="lg" className="bg-brand-500 hover:bg-brand-400 text-white text-base font-semibold px-8 h-14 rounded-full shadow-[0_0_20px_rgba(82,183,136,0.3)] border-0">
+                Get a Quote <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white text-base font-semibold px-8 h-14 rounded-full backdrop-blur-sm">
-                <a href="tel:0490894087"><PhoneCall className="mr-2 w-5 h-5" /> 0490 894 087</a>
+              <Button nativeButton={false} render={<a href="tel:0490894087" />} size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 hover:text-white text-base font-semibold px-8 h-14 rounded-full backdrop-blur-sm">
+                <PhoneCall className="mr-2 w-5 h-5" /> 0490 894 087
               </Button>
             </div>
           </motion.div>
@@ -99,8 +99,8 @@ export default function Home() {
               <p className="text-lg text-stone-600 mb-8 leading-relaxed">
                 Thornton's Lawn & Landscape is dedicated to transforming outdoor spaces with precision, care, and attention to detail. We take pride in delivering reliable and professional lawn care and landscaping services that enhance the beauty and value of every property.
               </p>
-              <Button asChild variant="link" className="text-brand-600 font-semibold p-0 h-auto text-lg hover:text-brand-700">
-                <Link to="/about">Learn more about us <ArrowRight className="ml-2 w-5 h-5" /></Link>
+              <Button nativeButton={false} render={<Link to="/about" />} variant="link" className="text-brand-600 font-semibold p-0 h-auto text-lg hover:text-brand-700">
+                Learn more about us <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </motion.div>
             
@@ -166,8 +166,8 @@ export default function Home() {
           </div>
           
           <div className="mt-16 text-center">
-            <Button asChild size="lg" className="rounded-full bg-stone-900 text-white hover:bg-stone-800 border-0 h-14 px-8">
-              <Link to="/services">View All Services</Link>
+            <Button nativeButton={false} render={<Link to="/services" />} size="lg" className="rounded-full bg-stone-900 text-white hover:bg-stone-800 border-0 h-14 px-8">
+              View All Services
             </Button>
           </div>
         </div>
@@ -223,8 +223,8 @@ export default function Home() {
             Ready to enhance the beauty and value of your property?
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild size="lg" className="bg-stone-900 border-0 text-white hover:bg-stone-800 text-base font-semibold px-10 h-14 rounded-full">
-              <Link to="/contact">Request a Quote</Link>
+            <Button nativeButton={false} render={<Link to="/contact" />} size="lg" className="bg-stone-900 border-0 text-white hover:bg-stone-800 text-base font-semibold px-10 h-14 rounded-full">
+              Request a Quote
             </Button>
           </div>
         </motion.div>

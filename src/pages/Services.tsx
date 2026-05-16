@@ -81,8 +81,8 @@ export default function Services() {
                     ))}
                   </ul>
                   
-                  <Button asChild size="lg" className="bg-stone-900 text-white hover:bg-stone-800 rounded-full px-8 border-0">
-                    <Link to="/contact">Request this service</Link>
+                  <Button nativeButton={false} render={<Link to="/contact" />} size="lg" className="bg-stone-900 text-white hover:bg-stone-800 rounded-full px-8 border-0">
+                    Request this service
                   </Button>
                 </div>
                 
@@ -106,8 +106,8 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-6 lg:px-16 text-center">
           <h2 className="text-2xl font-bold text-brand-900 mb-4">Don't see what you need?</h2>
           <p className="text-brand-700 mb-8 max-w-xl mx-auto">We offer custom landscaping solutions. Reach out to discuss your specific requirements.</p>
-          <Button asChild variant="outline" className="border-brand-300 text-brand-700 hover:bg-brand-100 rounded-full h-12 px-8">
-             <Link to="/contact">Contact us</Link>
+          <Button nativeButton={false} render={<Link to="/contact" />} variant="outline" className="border-brand-300 text-brand-700 hover:bg-brand-100 rounded-full h-12 px-8">
+             Contact us
           </Button>
         </div>
       </section>
